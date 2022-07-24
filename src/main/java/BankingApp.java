@@ -15,6 +15,12 @@ public class BankingApp {
                      case 1:
                          account.showAccount();
                          break;
+                     case 2:
+                         account.deposit();
+                         break;
+                     case 3:
+                         account.withdrawal();
+                         break;
              }
          } while(op != 4);
     }
