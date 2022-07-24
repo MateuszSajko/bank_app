@@ -32,7 +32,12 @@ public class AccountDetails {
     public void withdrawal() {
         System.out.println("Enter the amount of money you want to withdraw from your account");
         long cashOut = scanner.nextLong();
-        balance = balance - cashOut;
+        if (balance - cashOut < 0) {
+            System.out.println("Your account balance after this operation would be negative, choose different ammount \n");}
+            else{
+                balance = balance - cashOut;
+            }
+
         System.out.println("Yours current sallary is " + balance +  "\n");
 
     }
