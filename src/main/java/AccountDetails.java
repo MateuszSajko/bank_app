@@ -41,4 +41,12 @@ public class AccountDetails {
         System.out.println("Yours current sallary is " + balance +  "\n");
 
     }
+
+    public long getBalance() {
+        return balance;
+    }
+
+    public void setBalance(long balance) {
+        this.balance = balance;
+    }
 }
