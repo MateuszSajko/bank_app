@@ -19,7 +19,7 @@ public class AccountDetails {
     public void showAccount (){
         System.out.println("Your account name is " + name);
         System.out.println("Your account number is " + accountNumber);
-        System.out.println("Your account balance is " + balance);
+        System.out.println("Your account balance is " + balance + "\n");
 
     }
     public void deposit (){
@@ -38,7 +38,7 @@ public class AccountDetails {
                 balance = balance - cashOut;
             }
 
-        System.out.println("Yours current sallary is " + balance +  "\n");
+        System.out.println("Your current salary is " + balance +  "\n");
 
     }
 

@@ -4,12 +4,12 @@ public class BankingApp {
     public static void main(String[] args) {
         Scanner scann = new Scanner(System.in);
         AccountDetails account = new AccountDetails();
-        System.out.println("Witaj w naszej aplikacji bankowej");
-        System.out.println("Utworz nowe konto");
+        System.out.println("Welcome to our Bank app \n");
+        System.out.println("Create an account \n");
         account.createAccount();
          int op;
              do {
-                 System.out.println("Jaka operacja Cie interesuje \n 1. Informacje ogolne \n 2. Wplata na konto \n 3. Wyplata gotowki \n 4. Wyjscie");
+                 System.out.println("What kind of operation you are interested in? \n 1. Account information \n 2. Payment on account \n 3. Withdrawal from the account \n 4. Exit");
                  op = scann.nextInt();
                  switch(op) {
                      case 1:
